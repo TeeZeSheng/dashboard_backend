@@ -13,9 +13,9 @@ const profitRoute = require('./routes/profitRoute');
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://keen-smakager-2e36df.netlify.app',  // Replace with your Next.js frontend URL
-    credentials: true  // Allows cookies to be sent
-  }));
+  origin: true, 
+  credentials: true  
+}));
 
 
 app.use('/api/v1/data', dataRoute);
